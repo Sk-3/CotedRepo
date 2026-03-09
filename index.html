@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Técnicas de Programação – UTFPR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-brand">
+        <span class="brand-acronym">UTF<span class="brand-accent">PR</span></span>
+        <div class="brand-divider"></div>
+        <div class="brand-text">
+          <span class="brand-dept">Técnicas de Programação</span>
+          <span class="brand-sub">Engenharia de Software · 2026/1</span>
+        </div>
+      </div>
+      <nav class="header-nav" id="mainNav">
+        <a href="#poo">POO</a>
+        <a href="#padroes">Padrões</a>
+        <a href="#multithread">Multithread</a>
+        <a href="#uml">UML</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO / DESCRIÇÃO DO CURSO -->
+  <section class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <span class="hero-tag">Disciplina</span>
+      <h1 class="hero-title">Técnicas de<br/><em>Programação</em></h1>
+      <p class="hero-desc">
+        Explore os pilares do desenvolvimento de software moderno: orientação a objetos, padrões
+        de projeto consagrados, programação concorrente e modelagem com UML. Uma jornada do
+        conceito à implementação.
+      </p>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">4</span><span class="stat-label">Módulos</span></div>
+        <div class="stat"><span class="stat-num">60h</span><span class="stat-label">Carga horária</span></div>
+        <div class="stat"><span class="stat-num">2026</span><span class="stat-label">Semestre 1</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-card">
+        <div class="code-dots"><span></span><span></span><span></span></div>
+        <pre><code><span class="kw">class</span> <span class="cl">Disciplina</span> {
+  <span class="kw">private</span> modulos: <span class="tp">string</span>[];
+
+  <span class="fn">constructor</span>() {
+    <span class="kw">this</span>.modulos = [
+      <span class="st">"POO"</span>,
+      <span class="st">"Padrões de Projeto"</span>,
+      <span class="st">"Multithread"</span>,
+      <span class="st">"UML"</span>
+    ];
+  }
+}</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+
+    <!-- MÓDULO POO -->
+    <section class="module-section" id="poo">
+      <div class="module-header">
+        <div class="module-index">01</div>
+        <div>
+          <h2 class="module-title">Programação Orientada a Objetos</h2>
+          <p class="module-subtitle">Fundamentos e paradigmas da POO aplicados em C++</p>
+        </div>
+      </div>
+      <div class="module-body">
+        <p>
+          A <strong>Programação Orientada a Objetos</strong> é um paradigma que organiza o software em
+          torno de objetos — entidades que combinam estado (atributos) e comportamento (métodos).
+          Este módulo consolida os quatro pilares que sustentam todo o design orientado a objetos.
+        </p>
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <span class="pillar-icon">⬡</span>
+            <h3>Encapsulamento</h3>
+            <p>Oculta detalhes internos e expõe apenas o necessário por meio de interfaces bem definidas.</p>
+          </div>
+          <div class="pillar-card">
+            <span class="pillar-icon">⬡</span>
+            <h3>Herança</h3>
+            <p>Permite que classes derivadas reutilizem e estendam comportamentos de classes base.</p>
+          </div>
+          <div class="pillar-card">
+            <span class="pillar-icon">⬡</span>
+            <h3>Polimorfismo</h3>
+            <p>Objetos de tipos distintos respondem ao mesmo contrato de maneiras diferentes.</p>
+          </div>
+          <div class="pillar-card">
+            <span class="pillar-icon">⬡</span>
+            <h3>Abstração</h3>
+            <p>Modela conceitos do mundo real destacando apenas características essenciais.</p>
+          </div>
+        </div>
+        <h3 class="list-heading">Tópicos abordados</h3>
+        <ul class="topic-list">
+          <li>Classes, objetos, construtores e destrutores</li>
+          <li>Modificadores de acesso: <code>public</code>, <code>private</code>, <code>protected</code></li>
+          <li>Interfaces e classes abstratas</li>
+          <li>Sobrecarga e sobrescrita de métodos</li>
+          <li>Princípios SOLID como extensão da POO</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- MÓDULO PADRÕES DE PROJETO -->
+    <section class="module-section accent-alt" id="padroes">
+      <div class="module-header">
+        <div class="module-index">02</div>
+        <div>
+          <h2 class="module-title">Padrões de Projeto</h2>
+          <p class="module-subtitle">Soluções reutilizáveis para problemas recorrentes de design</p>
+        </div>
+      </div>
+      <div class="module-body">
+        <p>
+          Documentados pelo <strong>Gang of Four</strong>, os padrões de projeto são receitas
+          testadas para resolver problemas comuns de arquitetura. Eles promovem código mais legível,
+          extensível e desacoplado.
+        </p>
+        <div class="patterns-grid">
+          <div class="pattern-group">
+            <h3 class="pattern-group-title">Criacionais</h3>
+            <ul class="topic-list compact">
+              <li>Singleton</li>
+              <li>Factory Method</li>
+              <li>Abstract Factory</li>
+              <li>Builder</li>
+              <li>Prototype</li>
+            </ul>
+          </div>
+          <div class="pattern-group">
+            <h3 class="pattern-group-title">Estruturais</h3>
+            <ul class="topic-list compact">
+              <li>Adapter</li>
+              <li>Bridge</li>
+              <li>Composite</li>
+              <li>Decorator</li>
+              <li>Facade</li>
+            </ul>
+          </div>
+          <div class="pattern-group">
+            <h3 class="pattern-group-title">Comportamentais</h3>
+            <ul class="topic-list compact">
+              <li>Observer</li>
+              <li>Strategy</li>
+              <li>Command</li>
+              <li>Iterator</li>
+              <li>Template Method</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MÓDULO MULTITHREAD -->
+    <section class="module-section" id="multithread">
+      <div class="module-header">
+        <div class="module-index">03</div>
+        <div>
+          <h2 class="module-title">Programação Multithread</h2>
+          <p class="module-subtitle">Concorrência, paralelismo e sincronização de processos</p>
+        </div>
+      </div>
+      <div class="module-body">
+        <p>
+          Programas modernos precisam executar múltiplas tarefas simultaneamente. Este módulo
+          apresenta os desafios da <strong>programação concorrente</strong> e as ferramentas para
+          criar aplicações seguras, eficientes e livres de condições de corrida.
+        </p>
+        <h3 class="list-heading">Conteúdo programático</h3>
+        <ul class="topic-list">
+          <li>Threads vs. Processos: diferenças e casos de uso</li>
+          <li>Criação e ciclo de vida de threads em Java (<code>Thread</code>, <code>Runnable</code>)</li>
+          <li>Sincronização: <code>synchronized</code>, <code>Lock</code> e <code>Semaphore</code></li>
+          <li>Condições de corrida, deadlock e starvation</li>
+          <li>ExecutorService e Thread Pools</li>
+          <li>Programação assíncrona com <code>CompletableFuture</code></li>
+        </ul>
+        <div class="callout">
+          <span class="callout-icon">⚡</span>
+          <p><strong>Aviso:</strong> código concorrente mal escrito é uma das causas mais comuns de bugs difíceis de reproduzir. A disciplina dedica atenção especial a técnicas de depuração e testes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MÓDULO UML -->
+    <section class="module-section accent-alt" id="uml">
+      <div class="module-header">
+        <div class="module-index">04</div>
+        <div>
+          <h2 class="module-title">Documentação UML</h2>
+          <p class="module-subtitle">Modelagem visual de sistemas com a Unified Modeling Language</p>
+        </div>
+      </div>
+      <div class="module-body">
+        <p>
+          A <strong>UML</strong> é a linguagem padrão para documentar arquitetura de software. Através
+          de diagramas bem elaborados, equipes comunicam decisões de design com precisão, reduzindo
+          ambiguidades e acelerando o onboarding de novos membros.
+        </p>
+        <div class="diagrams-grid">
+          <div class="diagram-card">
+            <div class="diagram-thumb structure">
+              <div class="uml-box"><<interface>><br/>Forma</div>
+              <div class="uml-arrow">▲</div>
+              <div class="uml-row">
+                <div class="uml-box sm">Círculo</div>
+                <div class="uml-box sm">Retângulo</div>
+              </div>
+            </div>
+            <h3>Diagrama de Classes</h3>
+            <p>Representa estrutura estática: classes, atributos, métodos e relacionamentos.</p>
+          </div>
+          <div class="diagram-card">
+            <div class="diagram-thumb sequence">
+              <div class="seq-actor">:Cliente</div>
+              <div class="seq-line"></div>
+              <div class="seq-msg">→ request()</div>
+              <div class="seq-actor right">:Servidor</div>
+            </div>
+            <h3>Diagrama de Sequência</h3>
+            <p>Ilustra a ordem de mensagens trocadas entre objetos ao longo do tempo.</p>
+          </div>
+          <div class="diagram-card">
+            <div class="diagram-thumb usecase">
+              <div class="uc-actor">👤</div>
+              <div class="uc-oval">Fazer Login</div>
+            </div>
+            <h3>Diagrama de Casos de Uso</h3>
+            <p>Descreve interações entre atores e funcionalidades do sistema.</p>
+          </div>
+        </div>
+        <h3 class="list-heading">Ferramentas utilizadas</h3>
+        <ul class="topic-list">
+          <li>PlantUML — geração de diagramas via texto</li>
+          <li>draw.io — editor visual colaborativo</li>
+          <li>Mermaid — diagramas em Markdown</li>
+          <li>StarUML — modelagem avançada com exportação</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-acronym sm">UTF<span class="brand-accent">PR</span></span>
+        <p>Universidade Tecnológica Federal do Paraná</p>
+      </div>
+      <div class="footer-links">
+        <span class="footer-heading">Módulos</span>
+        <a href="#poo">POO</a>
+        <a href="#padroes">Padrões de Projeto</a>
+        <a href="#multithread">Multithread</a>
+        <a href="#uml">Documentação UML</a>
+      </div>
+      <div class="footer-info">
+        <span class="footer-heading">Informações</span>
+        <p>Disciplina: Técnicas de Programação</p>
+        <p>Período: 2026 / Semestre 1</p>
+        <p>Plataforma: Moodle UTFPR</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 UTFPR · Técnicas de Programação. Desenvolvido para fins acadêmicos.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const nav = document.getElementById('mainNav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      toggle.classList.toggle('active');
+    });
+    nav.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        nav.classList.remove('open');
+        toggle.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
