@@ -6,7 +6,7 @@ Página web da disciplina de **Técnicas de Programação** do curso de Engenhar
 
 ## 🖥️ Preview
 
-![Página Inicial](./imagens/paginaInicial.PNG)
+![Página Inicial](./Imagens/paginaInicial.PNG)
 
 ---
 
